@@ -1,0 +1,130 @@
+﻿.personal-accounts-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.content-homepage {
+    align-items: flex-start;
+    width: 100%;
+    max-width: auto;
+    padding: 40px;
+    background-color: #2e2e2e;
+    border-radius: 0px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .page-header h2 {
+        margin: 0;
+    }
+
+.search-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: medium !important;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    width: 300px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #FFA500, #FF4500);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .search-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        animation: pulse 0.5s infinite;
+    }
+
+.table-container-homepage {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+    .table th, .table td {
+        border: 1px solid #ffa500;
+        padding: 10px;
+        text-align: left;
+        position: relative;
+        word-wrap: break-word;
+    }
+
+    .table th {
+        background: #FFA500;
+        color: white;
+    }
+
+    .table td {
+        background: #333;
+        color: white;
+    }
+
+.password-cell {
+    font-family: monospace;
+    position: relative;
+    color:black!important;
+}
+
+.hidden-password, .visible-password {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color:black!important;
+}
+
+.copy-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ffa500;
+}
+
+    .copy-icon:hover {
+        color: #ff4500;
+    }
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}

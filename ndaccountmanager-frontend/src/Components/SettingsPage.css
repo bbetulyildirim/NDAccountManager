@@ -1,0 +1,113 @@
+﻿.settings-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-settings {
+    display: flex;
+    justify-content: space-around; /* Bölümleri yan yana hizalar */
+    align-items: flex-start;
+    padding: 100px;
+    background-color: #333333;
+    color: #333333;
+    flex-grow: 1;
+}
+
+.user-information, .category-management {
+    padding: 40px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    color: black;
+    width: 45%; /* Bölümlerin genişliği */
+    margin: 10px; /* Bölümler arasında boşluk */
+}
+
+.user-information {
+    text-align: center;
+}
+
+.category-management {
+    text-align: center;
+}
+
+.category-list {
+    margin-bottom: 20px;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #3A3A3A;
+}
+
+    .category-item span {
+        flex-grow: 1;
+    }
+
+.delete-button {
+    background: linear-gradient(90deg, #FFA500, #FF4500);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .delete-button.active {
+        background: linear-gradient(90deg, #FF6A00, #FFA500);
+    }
+
+    .delete-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+.category-form {
+    display: flex;
+    align-items: center;
+}
+
+    .category-form input {
+        padding: 10px;
+        flex-grow: 1;
+        margin-right: 10px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .category-form button {
+        background: linear-gradient(90deg, #FFA500, #FF4500);
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        .category-form button.active {
+            background: linear-gradient(90deg, #FF6A00, #FFA500);
+        }
+
+        .category-form button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+.error {
+    color: #4682b4;
+    margin-top: 10px;
+    text-align: center;
+}
